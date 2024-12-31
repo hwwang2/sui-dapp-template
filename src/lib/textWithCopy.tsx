@@ -27,7 +27,7 @@ const TextWithCopyIcon: React.FC<{ text: string }> = ({text}) => {
  
   return (
     <div className="relative flex items-center w-full">
-      <div className="mr-4 overflow-hidden whitespace-nowrap text-ellipsis">
+      <div className="overflow-hidden whitespace-nowrap text-ellipsis">
         {textToCopy}
       </div>
       <button

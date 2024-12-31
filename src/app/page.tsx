@@ -3,7 +3,7 @@ import { getUserProfile } from '@/contracts/query'
 import { useCurrentAccount } from '@mysten/dapp-kit'
 import { useEffect, useState } from 'react'
 import { CategorizedObjects, calculateTotalBalance, formatBalance } from '@/lib/assetsHelpers'
-import TextWithCopyIcon from '../lib/textWithCopy'
+import TextWithCopyIcon from '@/lib/textWithCopy'
 
 export default function Home() {
   const account = useCurrentAccount();
@@ -27,11 +27,11 @@ export default function Home() {
   }, [account]);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex justify-center">
       {userObjects!=null ? (
-      <main className="flex-grow flex flex-col items-center p-8">        
+      <main className="container flex-grow flex flex-col items-center p-8">        
         {userObjects && (
-          <div className="w-full max-w-6xl">
+          <div className="w-full">
             <h2 className="text-2xl font-bold mb-4">Your Assets</h2>
             
             <div className="flex gap-8">
