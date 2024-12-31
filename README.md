@@ -20,6 +20,26 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## library and framework
+* nextjs15
+* react19
+* shadcn
+* tailwindcss
+* react-icons
+* @mysten/dapp-kit @mysten/sui
+
+### 初始化项目
+```bash
+npx create-next-app@latest
+npm install @mysten/sui @mysten/dapp-kit
+```
+### 添加shadcn ui组件
+npx shadcn-ui@latest init
+
+npx shadcn@latest add navigation-menu
+### 
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
