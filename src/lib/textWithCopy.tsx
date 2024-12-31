@@ -8,7 +8,7 @@ import {FaCopy} from "react-icons/fa";
 
  
 const TextWithCopyIcon: React.FC<{ text: string }> = ({text}) => {
-  const [textToCopy, setTextToCopy] = useState(text);
+  const [textToCopy, _] = useState(text);
   const { toast } = useToast()
   const handleCopy = () => {
     // 这里你应该有一个函数来处理复制操作，比如使用 navigator.clipboard.writeText
