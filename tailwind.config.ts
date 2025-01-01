@@ -55,7 +55,11 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		maxWidth: {
+			'60': '60%',
+        	'80': '80%',
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

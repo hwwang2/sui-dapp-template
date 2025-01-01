@@ -58,9 +58,9 @@ export default function Home() {
             <div className="flex gap-8">
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Other Objects</h3>
-                <div className="h-min-[500px] overflow-y-auto flex flex-wrap">
+                <div className="overflow-y-auto flex flex-wrap">
                   {Object.entries(userObjects.objects).map(([objectType, objects]) => (
-                    <div key={objectType} className="mb-4 lg:w-1/2 w-full">
+                    <div key={objectType} className="relative mb-4 lg:w-1/2 w-full">
                       <div className='rounded-lg mx-2 p-4 bg-gray-100'>
                         <h4 className="font-medium text-lg">{objectType.split('::').pop()}</h4>
                         <p>Count: {objects.length}</p>
